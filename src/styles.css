@@ -1,0 +1,69 @@
+/* Стили для таблицы */
+table {
+  width: 80%; /* Уменьшаем ширину таблицы до 80% от родительского контейнера */
+  max-width: 1000px; /* Максимальная ширина таблицы */
+  margin: 0 auto; /* Выравнивание таблицы по центру */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;  /* Шрифт для лучшего восприятия */
+}
+
+th, td {
+  border: 1px solid #0066cc; /* Голубая граница */
+  padding: 12px;
+  text-align: left;
+  color: #fff; /* Белый текст */
+}
+
+th {
+  background-color: #0066cc; /* Голубой фон для заголовков */
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #b3d9ff; /* Светлый голубой фон для четных строк */
+}
+
+tr:nth-child(odd) {
+  background-color: #cce0ff; /* Более светлый голубой фон для нечетных строк */
+}
+
+tr:hover {
+  background-color: #3399ff; /* Более яркий голубой фон при наведении */
+}
+
+/* Стили для пагинации */
+div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: 1px solid #0066cc; /* Голубая граница */
+  background-color: #0066cc; /* Голубой фон */
+  color: #fff; /* Белый текст */
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;  /* Закругленные углы для кнопок */
+}
+
+button:disabled {
+  background-color: #b3c6ff; /* Светлый голубой фон для неактивных кнопок */
+  cursor: not-allowed;
+  color: #666; /* Серый текст для неактивных кнопок */
+}
+
+button.active {
+  font-weight: bold;
+  background-color: #3399ff; /* Яркий голубой фон для активной страницы */
+  color: white; /* Белый текст для активной страницы */
+  border: 1px solid #3399ff; /* Яркая голубая граница */
+}
+
+button:hover:not(:disabled) {
+  background-color: #0066cc; /* Более яркий голубой фон при наведении */
+  color: white; /* Белый текст при наведении */
+}
